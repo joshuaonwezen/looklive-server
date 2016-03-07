@@ -1,11 +1,11 @@
-<details class="appearance" data-id="{{ item.id }}">
-    <section class="appearance-left">
+<section class="appearance" data-id="{{ item.id }}">
+    <article class="appearance-left">
         <img src="{{ item.image.url }}">
         {{#each item.product_occurrences}}
             <div class="product-indicator" style="top: {{position.y}}%; left: {{position.x}}%;" data-uuid="{{product.id}}"></div>
         {{/each}}
-    </section>
-    <section class="appearance-right">
+    </article>
+    <article class="appearance-right">
         <h2><img class="avatar" src="{{ item.subject.avatar.url }}"> {{ item.subject.name }}</h2>
         <h1>{{ item.title }}</h1>
 
@@ -40,5 +40,5 @@
                 {{/each}}
             </div>
         </div>
-    </section>
-</details>
+    </article>
+</section>
