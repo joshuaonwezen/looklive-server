@@ -1,50 +1,50 @@
-body .inner-wrapper {
-    padding: 50px;
-}
-
 body {
     font: 14px Raleway, Helvetica, Arial, sans-serif;
     background-color: #f1f1f1;
     margin: 0;
 }
 
-body .nav {
+main {
+    padding: 50px;
+}
+
+header {
     background-color: #252525;
     padding: .5em 1em;
 }
 
-body .nav .nav-inner img {
+header .logo img {
     height: 30px;
     display: block;
     float: left;
 }
 
-body .nav .nav-items {
+header .nav-list {
     list-style: none;
     float: right;
     margin: 0 auto;
 }
 
-body .nav .nav-items li {
+header .nav-list-item {
     float: left;
     height: 100%;
     line-height: 30px;
     margin-right: 15px;
 }
 
-body .nav .nav-items li a {
+header .nav-list-item a {
     color: white;
     text-decoration: none;
 }
 
-body .nav .nav-items li a img {
+header .nav-list-item a img {
     height: 1em;
     position: relative;
     margin-right: .3em;
     top: 6px;
 }
 
-body .nav .nav-items li a:hover {
+header .nav-list-item a:hover {
     color: #d84a4a;
 }
 
