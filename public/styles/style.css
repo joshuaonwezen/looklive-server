@@ -69,29 +69,29 @@ a {
     color: #00B7FF;
 }
 
-main .feed-item {
+.feed-item {
     width: 300px;
     height: 600px;
     float: left;
     margin: .5em;
 }
 
-main .feed-item-img {
+.feed-item-img {
     max-width: 100%;
 }
 
-main .appearance-right, main .appearance-left {
+.appearance-right, .appearance-left {
     float: left;
 }
 
-main .feed-item h2 img, main .appearance-right h2 img {
+.feed-item h2 img, .appearance-right h2 img {
     width: 2em;
     height: 2em;
     margin-right: .5em;
     border-radius: 50%;
 }
 
-main .feed-item h2, main .appearance h2 {
+.feed-item h2, main .appearance h2 {
     font-size: 16px;
 
     display: -webkit-flex;
@@ -103,27 +103,28 @@ main .feed-item h2, main .appearance h2 {
     margin-bottom: .5em;
 }
 
-main .feed-item h1 {
+.feed-item h1 {
     margin-top: 0;
     font-size: 21px;
 }
 
-main .appearance h2 {
+.appearance h2 {
     font-size: 21px;
 }
 
-main .appearance .appearance-left {
+.appearance-left {
+    display:flex;
     width: 400px;
     height: 600px;
     margin-right: 2em;
     position: relative;
 }
 
-main .appearance-left img {
+.appearance-left-img {
     width: 100%;
 }
 
-body .appearance .appearance-left .product-indicator {
+.product-indicator {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -132,18 +133,18 @@ body .appearance .appearance-left .product-indicator {
     border-radius: 50%;
 }
 
-body .appearance .appearance-left .product-indicator.product-indicator-active {
+.product-indicator.product-indicator-active {
     background-color: #b4da55;
 }
 
-body .appearance .appearance-products-inner {
+.appearance-products-inner {
     width: 400px;
     position: relative;
     overflow: hidden;
     height: 700px;
 }
 
-body .appearance .appearance-products-inner .product {
+.product {
     width: 450px;
     max-width: 100%;
     position: absolute;
@@ -152,18 +153,18 @@ body .appearance .appearance-products-inner .product {
     transition: left .3s;
 }
 
-body .appearance .appearance-products-inner .product.product-active {
+.product.product-active {
     left: 0;
 }
 
-body .appearance-products h1 {
+.appearance-products h1 {
     font-size: 21px;
     color: #333;
     padding-bottom: .5em;
     border-bottom: 1px solid #ddd;
 }
 
-body .actual, body .similar {
+.actual, .similar {
     display: -webkit-flex;
     display: flex;
 
@@ -171,7 +172,7 @@ body .actual, body .similar {
     border-bottom: 1px solid #ddd;
 }
 
-body .actual .image, body .similar .image {
+.actual .image, .similar .image {
     width: 200px;
 
     -webkit-flex-shrink: 0;
@@ -180,28 +181,28 @@ body .actual .image, body .similar .image {
     margin-right: 1em;
 }
 
-body .similar .image {
+.similar .image {
     width: 150px;
 }
 
-body .actual .image h1, body .similar .image h1 {
+.actual .image h1, .similar .image h1 {
     margin: .5em 0;
     color: #333;
     font-size: 16px;
     border-bottom: none;
 }
 
-body .actual .image img, body .similar .image img {
+.actual .image img, .similar .image img {
     width: 100%;
 }
 
-body .actual .info h1, body .similar .info h1 {
+.actual .info h1, .similar .info h1 {
     font-size: 21px;
     margin: 1.5em 0 .5em 0;
     border-bottom: none;
 }
 
-body .actual .info h2, body .similar .info h2 {
+.actual .info h2, .similar .info h2 {
     font-size: 16px;
     margin: 1em 0;
 }
