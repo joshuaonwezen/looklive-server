@@ -48,17 +48,17 @@ The API returns JSON (for now).
 ##Semantic HTML & CSS Selectors Optimized
 
 ###Before
-![forthebadge](screenshots/html-before.png)
+![alt tag](screenshots/html-before.png)
 ###After
-![forthebadge](screenshots/html-after.png)
+![alt tag](screenshots/html-after.png)
 
 ##Header image changed
 
 ###Before
-![forthebadge](screenshots/header-before.png)
+![alt tag](screenshots/header-before.png)
 ###After
-![forthebadge](screenshots/header-after.png)
+![alt tag](screenshots/header-after.png)
 
 ###Images changed
-![forthebadge](screenshots/images-before.png)
+![alt tag](screenshots/images-before.png)
 ###After
