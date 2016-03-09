@@ -48,17 +48,20 @@ The API returns JSON (for now).
 ##Semantic HTML & CSS Selectors Optimized
 
 ###Before
-![alt tag](screenshots/html-before.png)
+![alt tag](/screenshots/html-before.png)
 ###After
-![alt tag](screenshots/html-after.png)
+![alt tag](/screenshots/html-after.png)
 
 ##Header image changed
 
 ###Before
-![alt tag](screenshots/header-before.png)
+![alt tag](/screenshots/header-before.png)
 ###After
-![alt tag](screenshots/header-after.png)
+![alt tag](/screenshots/header-after.png)
 
 ###Images changed
-![alt tag](screenshots/images-before.png)
+
+###Before
+![alt tag](/screenshots/images-before.png)
 ###After
+![alt tag](/screenshots/images-after.png)

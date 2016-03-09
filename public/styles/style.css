@@ -208,44 +208,44 @@ a {
 }
 
 .sprite {
-    background-image: url(../icons/spritesheet.png);
+    background-image: url(/icons/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
-    margin-top:-2px;
+    margin-top: -2px;
 }
 
 .sprite-brands {
     width: 31px;
     height: 25px;
-    background-position: -5px -5px;
+    background-position: 0 0;
 }
 
 .sprite-home {
     width: 29px;
     height: 25px;
-    background-position: -46px -5px;
+    background-position: -31px 0;
 }
 
 .sprite-latest {
     width: 24px;
     height: 26px;
-    background-position: -5px -40px;
+    background-position: 0 -25px;
 }
 
 .sprite-music {
     width: 25px;
     height: 25px;
-    background-position: -39px -40px;
+    background-position: -24px -25px;
 }
 
 .sprite-people {
     width: 28px;
     height: 25px;
-    background-position: -85px -5px;
+    background-position: -60px 0;
 }
 
 .sprite-shows {
     width: 31px;
     height: 25px;
-    background-position: -74px -40px;
+    background-position: -49px -25px;
 }
