@@ -1,0 +1,7 @@
+{
+    "extends": "airbnb/legacy",
+    "rules": {
+        "indent": [0, 2],
+        "func-names": 0,
+    }
+}
