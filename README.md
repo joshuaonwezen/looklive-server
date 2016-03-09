@@ -42,3 +42,23 @@ appearance id.
 product id.
 
 The API returns JSON (for now).
+
+#Preformance
+
+##Semantic HTML & CSS Selectors Optimized
+
+###Before
+![forthebadge](screenshots/html-before.png)
+###After
+![forthebadge](screenshots/html-after.png)
+
+##Header image changed
+
+###Before
+![forthebadge](screenshots/header-before.png)
+###After
+![forthebadge](screenshots/header-after.png)
+
+###Images changed
+![forthebadge](screenshots/images-before.png)
+###After
