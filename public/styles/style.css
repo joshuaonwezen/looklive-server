@@ -13,31 +13,31 @@ header {
     padding: .5em 1em;
 }
 
-header .nav-logo {
+.nav-logo {
     height: 30px;
     display: block;
     float: left;
 }
 
-header .nav-list {
+.nav-list {
     list-style: none;
     float: right;
     margin: 0 auto;
 }
 
-header .nav-list-item {
+.nav-list-item {
     float: left;
     height: 100%;
     line-height: 30px;
     margin-right: 15px;
 }
 
-header .nav-list-item-link {
+.nav-list-item-link {
     color: white;
     text-decoration: none;
 }
 
-header .nav-list-item-img {
+.nav-list-item-img {
     height: 1em;
     position: relative;
     margin-right: .3em;
@@ -46,22 +46,22 @@ header .nav-list-item-img {
     float: left;
 }
 
-header .nav-list-item-link:hover {
+.nav-list-item-link:hover {
     color: #d84a4a;
 }
 
-header .clear {
+.clear {
     clear: both;
 }
 
-header .banner {
+.banner {
     width: 100%;
     height: 50vh;
     max-height: 56vw;
     overflow: hidden;
 }
 
-header .banner-img {
+.banner-img {
     width: 100%;
 }
 

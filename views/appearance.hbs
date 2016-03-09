@@ -1,44 +1,44 @@
 <main class="appearance" data-id="{{ item.id }}">
-    <article class="appearance-left">
+    <section class="appearance-left">
         <img class="appearance-left-img" src="{{ item.image.url }}">
         {{#each item.product_occurrences}}
             <div class="product-indicator" style="top: {{position.y}}%; left: {{position.x}}%;" data-uuid="{{product.id}}"></div>
         {{/each}}
-    </article>
-    <article class="appearance-right">
+    </section>
+    <section class="appearance-right">
         <h2><img class="avatar" src="{{ item.subject.avatar.url }}"> {{ item.subject.name }}</h2>
         <h1>{{ item.title }}</h1>
 
-        <section class="appearance-products">
+        <article class="appearance-products">
             <h1>Products</h1>
             <section class="appearance-products-inner">
                 {{#each products}}
                     <article class="product" data-uuid="{{id}}">
                         <section class="actual">
-                            <div class="image">
+                            <section class="image">
                                 <h1>Actual</h1>
                                 <img src="{{image.url}}">
-                            </div>
-                            <div class="info">
+                            </section>
+                            <section class="info">
                                 <h1>{{ name }}</h1>
                                 <h2>{{ brand.name }}</h2>
-                            </div>
+                            </section>
                         </section>
                         {{#each similars}}
                             <section class="similar">
-                                <div class="image">
+                                <section class="image">
                                     <h1>{{ similar_type }}</h1>
                                     <img src="{{image.url}}">
-                                </div>
-                                <div class="info">
+                                </section>
+                                <section class="info">
                                     <h1>{{ name }}</h1>
                                     <h2>{{ brand.name }}</h2>
-                                </div>
+                                </section>
                             </section>
                         {{/each}}
                     </article>
                 {{/each}}
             </section>
-        </section>
-    </article>
+        </article>
+    </section>
 </main>
