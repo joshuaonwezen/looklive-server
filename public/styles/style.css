@@ -84,14 +84,14 @@ a {
     float: left;
 }
 
-.feed-item h2 img, .appearance-right h2 img {
+.avatar, .appearance-right h2 img {
     width: 2em;
     height: 2em;
     margin-right: .5em;
     border-radius: 50%;
 }
 
-.feed-item h2, main .appearance h2 {
+.feed-item-img-title, main .appearance h2 {
     font-size: 16px;
 
     display: -webkit-flex;
@@ -185,18 +185,18 @@ a {
     width: 150px;
 }
 
-.actual .image h1, .similar .image h1 {
+.image-title, .similar .image h1 {
     margin: .5em 0;
     color: #333;
     font-size: 16px;
     border-bottom: none;
 }
 
-.actual .image img, .similar .image img {
+.image-item{
     width: 100%;
 }
 
-.actual .info h1, .similar .info h1 {
+.image-title{
     font-size: 21px;
     margin: 1.5em 0 .5em 0;
     border-bottom: none;

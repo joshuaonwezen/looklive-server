@@ -16,19 +16,19 @@
                     <article class="product" data-uuid="{{id}}">
                         <section class="actual">
                             <section class="image">
-                                <h1>Actual</h1>
-                                <img src="{{image.url}}">
+                                <h1 class="image-title">Actual</h1>
+                                <img class="image-item" src="{{image.url}}">
                             </section>
                             <section class="info">
-                                <h1>{{ name }}</h1>
-                                <h2>{{ brand.name }}</h2>
+                                <h1 class="">{{ name }}</h1>
+                                <h2 class="">{{ brand.name }}</h2>
                             </section>
                         </section>
                         {{#each similars}}
                             <section class="similar">
                                 <section class="image">
-                                    <h1>{{ similar_type }}</h1>
-                                    <img src="{{image.url}}">
+                                    <h1 class="image-title">{{ similar_type }}</h1>
+                                    <img class="image-item" src="{{image.url}}">
                                 </section>
                                 <section class="info">
                                     <h1>{{ name }}</h1>
