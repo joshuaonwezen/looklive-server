@@ -1,8 +1,7 @@
 .DS_Store
-
 node_modules
 npm-debug.log
-
 .idea
-
+/public/icons/sprite/
 PERFORMANCE.md
+

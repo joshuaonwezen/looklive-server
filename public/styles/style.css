@@ -8,6 +8,14 @@ body {
     margin: 0;
 }
 
+i {
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block
+}
+
+
 body .nav {
     background-color: #252525;
     padding: .5em 1em;
