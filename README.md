@@ -73,6 +73,14 @@ The API returns JSON (for now).
 ###After
 ![alt tag](/screenshots/jquery_after.png)
 
+###Custom font removed
+###Before
+![alt tag](/screenshots/font_before_1.png)
+![alt tag](/screenshots/font_before_2.png)
+![alt tag](/screenshots/font_before_3.png)
+###After
+![alt tag](/screenshots/font_after_1.png)
+
 ###Lazyloading/Pagination
 ![alt tag](/screenshots/content_before.png)
 ###After
