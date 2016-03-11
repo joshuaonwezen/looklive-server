@@ -87,6 +87,8 @@ Improvements for next week:
 ###After
 ![alt tag](/screenshots/jquery_after.png)
 
+###NOTE: Network is really slow for the following 2 changes so data is different from last couple of changes
+
 ###Custom font removed
 ###Before
 ![alt tag](/screenshots/font_before_1.png)
@@ -95,7 +97,15 @@ Improvements for next week:
 ###After
 ![alt tag](/screenshots/font_after_1.png)
 
+###API HTML Return
+###Before
+![alt tag](/screenshots/api_html_return_before.png)
+###After
+![alt tag](/screenshots/api_html_return_after.png)
+
+
 ###Lazyloading/Pagination
+###Before
 ![alt tag](/screenshots/content_before.png)
 ###After
 ![alt tag](/screenshots/content_after.png)
