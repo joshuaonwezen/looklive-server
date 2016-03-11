@@ -72,3 +72,8 @@ The API returns JSON (for now).
 ![alt tag](/screenshots/jquery_before_1.png)
 ###After
 ![alt tag](/screenshots/jquery_after.png)
+
+###Lazyloading/Pagination
+![alt tag](/screenshots/content_before.png)
+###After
+![alt tag](/screenshots/content_after.png)
