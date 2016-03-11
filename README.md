@@ -46,8 +46,7 @@ The API returns JSON (for now).
 #Performance
 Changes made:
 
-Semantic HTML & CSS Selectors improved
-
+* Semantic HTML & CSS Selectors improved
 * Header image changed from PNG to JPG
 * Icons in top menu changed from PNG to spritesheet
 * Removed jQuery
@@ -56,7 +55,8 @@ Semantic HTML & CSS Selectors improved
 
 
 Improvements for next week:
-*Instead of timeline screenshots, screenshots of DOM loaded & Data loaded would be better only just noticed this
+
+* Instead of timeline screenshots, screenshots of DOM loaded & Data loaded would be better only just noticed this
 
 
 ##Semantic HTML & CSS Selectors Optimized
