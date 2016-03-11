@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
             res.status(404);
             next();
         }
-
-        res.render('feed', { title: 'Feed', items: JSON.parse(data) });
+        var slicedArr = JSON.parse(data).slice(0,10);
+        res.render('feed', { title: 'Feed', items: slicedArr });
     })
 });
 
