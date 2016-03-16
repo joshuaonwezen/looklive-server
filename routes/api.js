@@ -2,17 +2,15 @@ var fs = require('fs');
 var express = require('express');
 var router = express.Router();
 
-
-
-router.get('/feed', function(req, res, next) {
+router.get('/', function(req, res, next) {
     fs.readFile('resources/feed.json', 'utf8', function(err, data) {
         if(err) {
             res.status(404);
             next();
         }
 
-        res.render('feed', { title: 'Feed', items: JSON.parse(data), layout:false});
-    })    
+        res.render('feed', { title: 'Feed', items: JSON.parse(data), layout: false });
+    })
 });
 
 router.get('/appearance/:uuid', function(req, res, next) {
@@ -29,8 +27,6 @@ router.get('/appearance/:uuid', function(req, res, next) {
             var product = fs.readFileSync('resources/product/'+occurrence.product.id+'.json', 'utf8');
             products.push(JSON.parse(product));
         });
-
-        console.log(products);
 
         res.render('appearance', { title: item.title, item: item , products: products, layout: false});
     })
