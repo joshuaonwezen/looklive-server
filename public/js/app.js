@@ -15,19 +15,6 @@
 (function () {
     'use strict';
 
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js', {scope: './'})
-                .then(function (reg) {
-                    app.output('registered sw (see console)');
-                    console.info('registered sw', reg);
-                })
-                .catch(function (err) {
-                    app.output('error registering sw (see console)');
-                    console.error('error registering sw', err);
-                });
-    } else {
-        app.output('ServiceWorker is not supported');
-    }
 
     function ready(fn) {
         if (document.readyState !== 'loading') {

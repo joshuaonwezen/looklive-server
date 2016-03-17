@@ -1,39 +1,35 @@
 this.addEventListener('install', function(event) {
-  event.waitUntil(self.skipWaiting());
+    event.waitUntil(
+        caches.open('sw-1.1').then(function(cache) {
+            return cache.addAll([
+                './',
+                'styles/style.css',
+                'js/app.js'
+            ]);
+        })
+    );
 });
 
-this.addEventListener('activate', function(event) {
-  event.waitUntil(self.clients.claim());
+this.addEventListener('fetch', function(event) {
+    event.respondWith(
+        caches.match(event.request)
+            .then(function(response) {
+                if(response) {
+                    console.log('found cached response', response);
+                    return response;
+                } else {
+                    return fetchAndCache(event);
+                }
+            })
+    );
 });
 
-this.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request).then(response => {
-        return caches.open('looklive-v1').then(cache => {
-          cache.put(event.request, response.clone());
-          return response;
+function fetchAndCache(event) {
+    return fetch(event.request).then(function(response) {
+        return caches.open('sw-1.2').then(function(cache) {
+            console.log('fetched and caching', event.request);
+            cache.put(event.request, response.clone());
+            return response;
         });
-      });
-    })
-  );
-});
-
-this.addEventListener('message', event => {
-  switch (event.data.type) {
-    case 'preload':
-      preloadPage(event.data.content);
-      break;
-  }
-});
-
-function preloadPage(content) {
-  var request = new Request(content);
-
-  fetch(content)
-    .then(response => {
-      caches.open('looklive-v1').then(cache => {
-        cache.put(request, response.clone());
-      });
     });
 }
