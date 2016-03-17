@@ -43,7 +43,67 @@ product id.
 
 The API returns JSON (for now).
 
-#Performance
+
+#Week 2
+Changes made:
+
+* Service worker added
+* Progressive web app research (below)
+* Fixed missing points last week (below)
+
+Improvements for next week:
+
+* API JS can be more clean
+* Service Worker more worked out
+
+##Progressive web app research
+
+Nieuwe technieken gaan vaak unnoticed voorbij, een voorbeeld hiervan is de XMLHTTP request.
+Deze request bestond al 5 jaar voordat AJAX werd gemaakt, vaak zijn er dus mogelijkheden maar
+weten developers niet dat deze bestaan en om dit te gebruiken. Zo werd het web een lange tijd gezien
+als iets heel anders dan een native app op je telefoon.
+
+Een progressive web app is het ideaal beeld van een mobiele website, een website die eruit ziet
+en werkt zoals een app en waardoor mensen dit dus prettig op hun kleine device te gebruiken vinden.
+
+Wat is nou eigenlijk zo'n progressive web app? In het kort is het een website die sneller en zelfs
+offline te gebruiken is naarmate je hem vaker gebruikt, de app verandert op basis van jouw gedrag 
+erop net als een native app zou werken met alle instellingen, enige verschil? het is gewoon een website
+met een URL.
+
+De verschillen tussen web apps en native apps zijn natuurlijk nog wel aanwezig maar steeds minder.
+Zo zijn de 2 kern punten die een website een progressive web app maken de "Service worker" en "Homescreen link",
+een service worker zorgt ervoor dat je de site kan cachen en dus ook offline zal kunnen bezoeken waar je ook bent.
+Een homescreen link is heel simpel een snelkoppeling op je telefoon zoals je die voor al je apps hebt, veel mensen
+die geen verstand hebben van techniek zullen hier het verschil in maken; als het een shortcut heeft is het een app! 
+Als je een url moet intypen is het een website! Dat is natuurlijk niet van deze tijd maar de gedachtegang is er zeker.
+
+Responsive web apps komen steeds vaker voor, zo vraagt chrome je na 2x dezelfde link te bezoeken of je hem in je dock wilt
+zetten tussen alle apps. Wat echter nog een probleem is is dat HTTPS erg belangrijk is voor de web app, zo is het internet
+natuurlijk een stuk minder veilig dan je native app, daarvoor is HTTPS de oplossing echter wordt dit nog niet ondersteund of
+automatisch gedaan door elke site (Looking at you Amazon!).
+
+
+###Sources:
+* https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/
+* https://www.quora.com/What-are-progressive-web-apps
+* http://arc.applause.com/2015/11/30/application-shell-architecture/
+* http://developer.telerik.com/featured/what-progressive-web-apps-mean-for-the-web/
+
+##Header image fixed:
+
+![alt tag](/screenshots/html_fixed.png)
+
+##Transition translate fixed:
+
+![alt tag](/screenshots/transition_fixed.png)
+
+##Script body fixed:
+Placed this after the HTML at the end of the body so HTML loads even if JS contains errors.
+
+##Single page app
+
+#Week 1
 Changes made:
 
 * Semantic HTML & CSS Selectors improved
