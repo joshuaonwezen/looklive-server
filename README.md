@@ -92,7 +92,7 @@ automatisch gedaan door elke site (Looking at you Amazon!).
 
 ##Header image fixed:
 
-![alt tag](/screenshots/html_fixed.png)
+![alt tag](/screenshots/header_fixed.png)
 
 ##Transition translate fixed:
 
