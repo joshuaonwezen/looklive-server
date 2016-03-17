@@ -1,3 +1,8 @@
+#Online op:
+http://146.185.134.66:3000/
+
+(Nog geen domein)
+
 # LookLive server
 
 The project you're looking at is an [express.js](http://expressjs.com) project. You'll use it to get set up a development environment where you're
@@ -55,6 +60,7 @@ Improvements for next week:
 
 * API JS can be more clean
 * Service Worker more worked out
+* Domain
 
 ##Progressive web app research
 
