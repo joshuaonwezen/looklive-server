@@ -26,6 +26,21 @@ this.addEventListener('fetch', function(event) {
     );
 });
 
+
+this.addEventListener('activate', function(event) {
+  var cacheWhitelist = ['vsw-1.1'];
+
+  event.waitUntil(
+    caches.keys().then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+        if (cacheWhitelist.indexOf(key) === -1) {
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
+});
+
 function fetchAndCache(event) {
     return fetch(event.request).then(function(response) {
         return caches.open('sw-1.2').then(function(cache) {
