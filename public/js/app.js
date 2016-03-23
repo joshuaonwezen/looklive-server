@@ -12,15 +12,16 @@
  });*/
 
 
+
 (function () {
     'use strict';
 
 
-    function ready(fn) {
+    function ready(event) {
         if (document.readyState !== 'loading') {
-            fn();
+            event();
         } else {
-            document.addEventListener('DOMContentLoaded', fn);
+            document.addEventListener('DOMContentLoaded', event);
         }
 
     }
@@ -51,6 +52,7 @@
 
 
     function route() {
+        //Credits robert
         var allRoutes = document.querySelectorAll('a[href^="/"]');
 
         Array.prototype.forEach.call(allRoutes, function (route) {
