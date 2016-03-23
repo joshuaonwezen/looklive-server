@@ -1,7 +1,6 @@
 #Online op:
 http://146.185.134.66:3000/
 
-(Nog geen domein)
 
 # LookLive server
 
@@ -47,6 +46,37 @@ appearance id.
 product id.
 
 The API returns JSON (for now).
+
+
+#Week 3
+Changes made:
+
+* Gulp or Grunt research
+* Web fonts & content
+
+##Gulp or Grunt?
+
+Gulp or Grunt are both build tools which help you speed up the process of optimizing your code before pushing it
+online. There are many other build tools for JavaScript like harp, mimosa, brunch, jake and Brocolli. All the tools mentioned before
+are in my opinion inferior due to one reason; less users. (with one of the exceptions being Brunch but it offers basically the same
+as Gulp and Grunt). Build tools are something you can add on but what do you need? Usually this question is answered partly for you after
+years of coding and work experience as you tend to do the same things over and over again. But the easy solution for this is looking at 
+other people's grunt/gulp configs and see what things would come in hand for you. That's why an active userbase that shares ideas is also
+very important.
+
+Now for the differences between the two, The biggest difference is that grunt focuses on configuration while gulp focuses on code.
+Grunt seems to be more of a list of commonly used tasks you can add while Gulp as I explained before let's the community create all
+these little tasks that help speed up the process.
+
+According to one of the sources gulp is a lot faster than grunt due to I/O speeds being very slow  while in-memory operations are fast.
+Also Grunt compiles all files for every single change which adds extra build time.
+
+For the reasons mentioned above I've decided to use Gulp.
+
+
+Sources: 
+* http://jaysoo.ca/2014/01/27/gruntjs-vs-gulpjs/
+* http://www.hongkiat.com/blog/gulp-vs-grunt/
 
 
 #Week 2
