@@ -90,7 +90,14 @@ As you can see the number of HTTP requests has lowered. Could've been 1 less if 
 
 Before
 
+440ms / 3.4s
 
+After
+
+428ms / 3.2s
+ 
+
+##Fonts
 
 #Week 2
 Changes made:
