@@ -79,6 +79,19 @@ Sources:
 * http://www.hongkiat.com/blog/gulp-vs-grunt/
 
 
+##HTTP Requests
+
+![alt tag](/screenshots/requests_before.png)
+![alt tag](/screenshots/requests.png)
+
+As you can see the number of HTTP requests has lowered. Could've been 1 less if we we're allowed to do the service worker registration inline :p /s
+
+##Minified CSS & JS
+
+Before
+
+
+
 #Week 2
 Changes made:
 
