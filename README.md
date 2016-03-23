@@ -99,6 +99,20 @@ After
 
 ##Fonts
 
+Not much change, just 1 load to extra font, already shown below for week 1.
+Now added font observer that adds font-loaded class.
+
+##Conclusion
+
+The biggest changes that needed to be made to the website were definately images. There is alot to gain here in terms of performance.
+That also means loading content differently and maybe thinking of another setup for the list page.
+
+Minifying the JS and changing this for this project as listed below didn't change too much but it's definately an important thing to do
+especially in bigger projects as for bigger projects this can save a lot of loading time.
+
+Minifying and changing CSS selectors didn't change much either but as with the JS it's important to do, same counts for semantic HTML.
+
+
 #Week 2
 Changes made:
 
