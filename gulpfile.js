@@ -1,12 +1,19 @@
 //credits dennis for tools
 var gulp = require('gulp');
+//prefixes
 var autoprefixer = require('gulp-autoprefixer');
+//syncs all browsers (wow)
 var browserSync = require('browser-sync').create();
+//caches
 var cache = require('gulp-cache');
+//concatenates files, putting them together
 var concat = require('gulp-concat');
+//minify css
 var cssnano = require('gulp-cssnano');
-var imagemin = require('gulp-imagemin');
+//minify js
 var uglify = require('gulp-uglify');
+//minify images
+var imagemin = require('gulp-imagemin');
 
 gulp.task('styles', function () {
     return gulp.src('src/styles/**/*.css',  { sourcemaps : true })
