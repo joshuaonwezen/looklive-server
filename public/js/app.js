@@ -29,6 +29,14 @@
     function onLoad() {
         route();
         renderAppereance();
+        
+        var observer = new FontFaceObserver('Raleway');
+
+        observer.check(null, 5000).then(function () {
+            document.body.classList.add('fonts-loaded');
+        }, function () {
+            console.log('Font is not available');
+        });
     }
 
     function renderAppereance() {

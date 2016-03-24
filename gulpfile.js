@@ -1,3 +1,4 @@
+//credits dennis for tools
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
@@ -5,23 +6,19 @@ var cache = require('gulp-cache');
 var concat = require('gulp-concat');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
-var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 
 gulp.task('styles', function () {
-    return gulp.src('src/styles/**/*.css')
-            .pipe(sourcemaps.init())
+    return gulp.src('src/styles/**/*.css',  { sourcemaps : true })
             .pipe(concat('style.css'))
             .pipe(autoprefixer('prefix'))
             .pipe(cssnano())
-            .pipe(sourcemaps.write('.'))
             .pipe(gulp.dest('public/styles'))
             .pipe(browserSync.stream());
 });
 
 gulp.task('scripts', function () {
-    return gulp.src('src/js/**/*.js')
-            .pipe(sourcemaps.init())
+    return gulp.src('src/js/**/*.js', { sourcemaps : true })
             .pipe(concat('app.js'))
             .pipe(uglify())
             .pipe(sourcemaps.write('.'))
@@ -45,7 +42,6 @@ gulp.task('serve', ['build'], function () {
     browserSync.init({
         proxy: 'localhost:3000'
     })
-
     gulp.watch('src/styles/**/*.css', ['styles']);
     gulp.watch('src/js/**/*.js', ['scripts-watch']);
     gulp.watch('src/images/**/*', ['images-watch']);
