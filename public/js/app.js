@@ -41,6 +41,9 @@
 
     function renderAppereance() {
         var product = document.querySelector('.product');
+        if(product == undefined){
+            return false;
+        }
         var indicator = document.querySelector('.product-indicator[data-uuid="' + product.getAttribute('data-uuid') + '"]');
         var allIndicators = document.querySelectorAll('.product-indicator');
 
@@ -49,11 +52,11 @@
 
         Array.prototype.forEach.call(allIndicators, function (btn) {
             btn.addEventListener('click', function (event) {
-                var id = event.currentTarget.getAttribute('data-uuid');
-                document.querySelector('.product-active').classList.remove('product-active');
-                document.querySelector('.product-indicator-active').classList.remove('product-indicator-active');
-                document.querySelector('.product[data-uuid="' + id + '"]').classList.add('product-active');
-                event.currentTarget.classList.add('product-indicator-active');
+                    var id = event.currentTarget.getAttribute('data-uuid');
+                    document.querySelector('.product-active').classList.remove('product-active');
+                    document.querySelector('.product-indicator-active').classList.remove('product-indicator-active');
+                    document.querySelector('.product[data-uuid="' + id + '"]').classList.add('product-active');
+                    event.currentTarget.classList.add('product-indicator-active');
             });
         });
     }
